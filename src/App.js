@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
+
 import { Routes, Route } from "react-router-dom";
-
-import Container from "react-bootstrap/Container";
-
+import { Container, Nav } from "react-bootstrap";
 import Introduction from "./components/Introduction";
 
 function App() {
