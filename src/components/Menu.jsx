@@ -23,27 +23,30 @@ const Menu = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Introduction</Nav.Link>
-                <NavDropdown
+                  <Nav.Link href="self-worth">Self-Worth</Nav.Link>
+                  <Nav.Link href="positude">Positude</Nav.Link>
+                  <Nav.Link href="etiquette">Etiquette</Nav.Link>
+                  <Nav.Link href="health-and-hygiene">Health ad Hygiene</Nav.Link>
+                  <Nav.Link href="physical-activity-and-nutrition">Physical Activity and Nutrtion</Nav.Link>
+                  <Nav.Link href="your-body">Your Body</Nav.Link>
+                  <Nav.Link href="dating-and-sex">Dating and Sex</Nav.Link>
+                  <Nav.Link href="safety">Safety</Nav.Link>
+                  <Nav.Link href="closing">Closing</Nav.Link>
+                  <Nav.Link href="hotlines">Hotlines</Nav.Link>
+                  <Nav.Link href="websites">Websites</Nav.Link>
+                  <NavDropdown
                     title="Topics"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="./components/SelfWorth">Self-Worth</NavDropdown.Item>
-                    <NavDropdown.Item href="/positude">Positude</NavDropdown.Item>
-                    <NavDropdown.Item href="etiquette">Etiquette</NavDropdown.Item>
-                    <NavDropdown.Item href="health-and-hygiene">Health and Hygiene</NavDropdown.Item>
-                    <NavDropdown.Item href="physical-activity-and-nutrition">Physical Activity and Nutrtion</NavDropdown.Item>
-                    <NavDropdown.Item href="your-body">Your Body</NavDropdown.Item>
-                    <NavDropdown.Item href="dating-and-sex">Dating and Sex</NavDropdown.Item>
-                    <NavDropdown.Item href="safety">Safety</NavDropdown.Item>
-                    <NavDropdown.Item href="closing">Closing</NavDropdown.Item>
-git 
+                    <NavDropdown.Item href="websites">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Something else here
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="hotlines">Hotlines</Nav.Link>
-                  <Nav.Link href="websites">Websites</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
