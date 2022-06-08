@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container, Offcanvas, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -35,10 +36,12 @@ const Menu = () => {
                   <Nav.Link href="hotlines">Hotlines</Nav.Link>
                   <Nav.Link href="websites">Websites</Nav.Link>
                   <NavDropdown
-                    title="Topics"
+                    title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="websites">Action</NavDropdown.Item>
+                    <NavDropdown.Item >
+                      <Link to="safety">Safety</Link>
+                    </NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
                       Another action
                     </NavDropdown.Item>
