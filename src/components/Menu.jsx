@@ -27,8 +27,8 @@ const Menu = () => {
                     title="Topics"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="self-worth">Self-Worth</NavDropdown.Item>
-                    <NavDropdown.Item href="positude">Positude</NavDropdown.Item>
+                    <NavDropdown.Item href="./components/SelfWorth">Self-Worth</NavDropdown.Item>
+                    <NavDropdown.Item href="/positude">Positude</NavDropdown.Item>
                     <NavDropdown.Item href="etiquette">Etiquette</NavDropdown.Item>
                     <NavDropdown.Item href="health-and-hygiene">Health and Hygiene</NavDropdown.Item>
                     <NavDropdown.Item href="physical-activity-and-nutrition">Physical Activity and Nutrtion</NavDropdown.Item>
@@ -36,7 +36,7 @@ const Menu = () => {
                     <NavDropdown.Item href="dating-and-sex">Dating and Sex</NavDropdown.Item>
                     <NavDropdown.Item href="safety">Safety</NavDropdown.Item>
                     <NavDropdown.Item href="closing">Closing</NavDropdown.Item>
-
+git 
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Something else here
