@@ -1,3 +1,6 @@
+html, body {
+  background-color: #ffc0cb70;
+}
 /* introduction to sneakers and jeans styling */
 
 .intro-header {
@@ -12,4 +15,10 @@ div.intro-header h3 {
   background-color: black;
   color: White;
   padding: 2px;
+}
+
+/* self-worth topic 1 styles */
+
+h1.topic-heading {
+  text-align: center;
 }
