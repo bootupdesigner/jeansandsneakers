@@ -24,7 +24,7 @@ const Menu = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Introduction</Nav.Link>
-                  <Nav.Link href="self-worth">Self-Worth</Nav.Link>
+                  <Nav.Link href="/self-worth">Self-Worth</Nav.Link>
                   <Nav.Link href="positude">Positude</Nav.Link>
                   <Nav.Link href="etiquette">Etiquette</Nav.Link>
                   <Nav.Link href="health-and-hygiene">Health ad Hygiene</Nav.Link>
