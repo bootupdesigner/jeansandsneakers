@@ -1,24 +1,54 @@
-html, body {
-  background-color: #ffc0cb70;
+html,
+body {
+    background-color: #ffc0cb70;
 }
+
+
+/* navigation menu */
+
+
+/* .nav-menu {
+    height: 10vh;
+} */
+
+
 /* introduction to sneakers and jeans styling */
 
 .intro-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 div.intro-header h3 {
-  background-color: black;
-  color: White;
-  padding: 2px;
+    background-color: black;
+    color: White;
+    padding: 2px;
 }
+
 
 /* self-worth topic 1 styles */
 
 h1.topic-heading {
-  text-align: center;
+    text-align: center;
+}
+
+
+/* Homepage styling */
+
+div.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img.home-logo {
+    object-fit: cover;
 }

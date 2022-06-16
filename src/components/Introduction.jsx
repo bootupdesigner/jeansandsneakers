@@ -1,8 +1,10 @@
 import React from "react";
 import FadeIn from 'react-fade-in';
+import Menu from "./Menu";
 const Introduction = () => {
   return (
     <div>
+      <Menu />
       <div className="intro-header">
         <h1>From Sneakers and Jeans</h1>
         <h3>Introduction</h3>
