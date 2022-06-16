@@ -8,7 +8,7 @@ const Home = () => {
             <h1>From Jeans and Sneakers</h1>
             <span>The Teen Girls' Guide To Getting Around</span>
             <img src={Logo} alt="From Sneakers and Jeans Logo" />
-            <Button type="button" variant="success" size="lg">Enter<br />From Jeans and Sneakers</Button>
+            <Button type="button" variant="success" size="lg" href="/home">Enter<br />From Jeans and Sneakers</Button>
         </div>
     )
 };
