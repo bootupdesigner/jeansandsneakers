@@ -7,7 +7,7 @@ const Menu = () => {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar className="nav-menu" key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#">Jeans & Sneakers</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
