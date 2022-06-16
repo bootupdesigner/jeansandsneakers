@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home-content">
             <h1>From Jeans and Sneakers</h1>
             <span>The Teen Girls' Guide To Getting Around</span>
-            <img src={Logo} />
+            <img src={Logo} alt="From Sneakers and Jeans Logo" />
             <Button type="button" variant="success" size="lg">Enter<br />From Jeans and Sneakers</Button>
         </div>
     )
