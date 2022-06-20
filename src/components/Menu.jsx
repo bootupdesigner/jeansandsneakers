@@ -33,28 +33,28 @@ const Menu = () => {
                       <Link to="/self-worth">Self-Worth</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="positude">Positude</Link>
+                      <Link to="/positude">Positude</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="etiquette">Etiquette</Link>
+                      <Link to="/etiquette">Etiquette</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="health-and-hygiene">Health ad Hygiene</Link>
+                      <Link to="/health-and-hygiene">Health ad Hygiene</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="physical-activity-and-nutrition">Physical Activity and Nutrtion</Link>
+                      <Link to="/physical-activity-and-nutrition">Physical Activity and Nutrtion</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="your-body">Your Body</Link>
+                      <Link to="/your-body">Your Body</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="dating-and-sex">Dating and Sex</Link>
+                      <Link to="/dating-and-sex">Dating and Sex</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="safety">Safety</Link>
+                      <Link to="/safety">Safety</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="closing">Closing</Link>
+                      <Link to="/closing">Closing</Link>
                     </NavDropdown.Item>
 
                     <NavDropdown.Divider />
@@ -63,9 +63,9 @@ const Menu = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                   <hr />
-                  <Link to="hotlines">Hotlines</Link>
+                  <Link to="/hotlines">Hotlines</Link>
                   <hr />
-                  <Link to="websites">Websites</Link>
+                  <Link to="/websites">Websites</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

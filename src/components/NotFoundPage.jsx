@@ -1,8 +1,12 @@
 import React from "react";
+import Menu from "./Menu";
 
 const NotFoundPage = () => {
     return(
-        <h1>404: Sorry this page does not exist</h1>
+        <div>
+            <Menu />        
+            <h1>404: Sorry this page does not exist</h1>
+        </div>
     )
 }
 
