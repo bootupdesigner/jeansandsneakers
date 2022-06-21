@@ -52,3 +52,9 @@ div.home-content {
 img.home-logo {
     object-fit: cover;
 }
+
+/* hotline-page styles */
+div.hotline-list {
+    display: flex;
+    flex-direction: column;
+}

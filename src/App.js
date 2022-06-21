@@ -16,7 +16,7 @@ import YourBody from "./components/YourBody";
 import Dating from "./components/Dating";
 import Safety from "./components/Safety";
 import Closing from "./components/Closing";
-import Hotlines from "./components/Hotlines";
+import Hotlines from "./components/hotlines/Hotlines";
 import Websites from "./components/Websites";
 import Home from "./components/Home";
 import NotFoundPage from "./components/NotFoundPage";
@@ -35,7 +35,7 @@ function App() {
         Route path = "/home"
         element = { < Introduction / > }
         />  <
-        Route path = "self-worth"
+        Route path = "/self-worth"
         element = { < SelfWorth / > }
         /> <
         Route path = "/positude"
