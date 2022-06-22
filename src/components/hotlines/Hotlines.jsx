@@ -1,8 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 
 import Menu from "../Menu";
-import hotlines from "./hotlines";
 
 const Hotlines = () => {
     return (
