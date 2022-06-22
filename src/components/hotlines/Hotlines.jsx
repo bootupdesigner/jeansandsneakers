@@ -1,6 +1,7 @@
 import React from "react";
 
 import Menu from "../Menu";
+import hotlines from "./hotlines";
 
 const Hotlines = () => {
     return (
