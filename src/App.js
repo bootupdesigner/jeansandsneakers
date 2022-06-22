@@ -22,58 +22,27 @@ import Home from "./components/Home";
 import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
-    return ( <
-        div className = "App" >
-        <
-        Container >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < Home / > }
-        />   <
-        Route path = "/home"
-        element = { < Introduction / > }
-        />  <
-        Route path = "/self-worth"
-        element = { < SelfWorth / > }
-        /> <
-        Route path = "/positude"
-        element = { < Positude / > }
-        />  <
-        Route path = "/etiquette"
-        element = { < Etiquette / > }
-        />  <
-        Route path = "/health-and-hygiene"
-        element = { < Hygiene / > }
-        />  <
-        Route path = "/physical-activity-and-nutrition"
-        element = { < Nutrition / > }
-        /> <
-        Route path = "/your-body"
-        element = { < YourBody / > }
-        />  <
-        Route path = "/dating-and-sex"
-        element = { < Dating / > }
-        />  <
-        Route path = "/safety"
-        element = { < Safety / > }
-        />  <
-        Route path = "/closing"
-        element = { < Closing / > }
-        />  <
-        Route path = "/hotlines"
-        element = { < Hotlines / > }
-        />  <
-        Route path = "/websites"
-        element = { < Websites / > }
-        />  <
-        Route path = "*"
-        element = { < NotFoundPage / > }
-        />  <
-        /Routes>  <
-        /Container>  <
-        /div >
+    return (
+        <div className="App">
+            <Container>
+                <Routes>
+                    <Route path="/" element={< Home />} />   
+                    <Route path="/home" element={< Introduction />} />  
+                    <Route path="/self-worth" element={< SelfWorth />} /> 
+                    <Route path="/positude" element={< Positude />} />  
+                    <Route path="/etiquette" element={< Etiquette />} />  
+                    <Route path="/health-and-hygiene" element={< Hygiene />} />  
+                    <Route path="/physical-activity-and-nutrition" element={< Nutrition />} /> 
+                    <Route path="/your-body" element={< YourBody />}/> 
+                    <Route path="/dating-and-sex" element={< Dating />} />
+                    <Route path="/safety" element={< Safety />} />
+                    <Route path="/closing" element={< Closing />} />
+                    <Route path="/hotlines" element={< Hotlines />} />
+                    <Route path="/websites" element={< Websites />} />
+                    <Route path="*" element={< NotFoundPage />} />
+                </Routes>
+            </Container>
+        </div>
     );
 }
 

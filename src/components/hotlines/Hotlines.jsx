@@ -1,25 +1,26 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
 import Menu from "../Menu";
-import hotlineContent from "./hotlines";
+import hotlines from "./hotlines";
 
 const Hotlines = () => {
-    const hotlines = hotlineContent;
-    return(
+    return (
         <div>
             <Menu />
-            {hotlines.map((hotline, index) => {
-                return(
-                    <div key={index}>
+            {hotlines.map((hotline, id) => {
+                return (
+                    <div key={id}>
                         <h3>{hotline.help}</h3>
                         <p>{hotline.notes}</p>
                         {hotline.contacts.map((contact) => {
-                            return(
-                                <div className="hotline-list" key={index}>
+                            return (
+                                <div className="hotline-list" key={id}>
                                     <span><strong>{contact.group}</strong></span>
-                                    <span>Call: {contact.call}</span>
-                                    <span>Text: {contact.text}</span>
-                                    <span>TTY: {contact.tty}</span>
-                                    <span>Visit: {contact.visit}</span>
+                                    <span>{contact.call}</span>
+                                    <span>{contact.text}</span>
+                                    <span>{contact.tty}</span>
+                                    <span>{contact.visit}</span>
                                     <hr />
                                 </div>
                             )
@@ -27,7 +28,7 @@ const Hotlines = () => {
                     </div>
                 );
             })}
-            </div>
+        </div>
 
     )
 }
