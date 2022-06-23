@@ -1,7 +1,7 @@
 const hotlines = [
     {
         help: "Violence and Abuse",
-        id: 1,
+        id: "1",
         contacts: [
             {
                 group: "Childhelp National Child Abuse Hotline",
@@ -22,7 +22,7 @@ const hotlines = [
     },
     {
         help: "Mental Help and Substance abuse",
-        id: 2,
+        id: "s",
         notes: [
             `National Toll-Free Help Lines`,
             `The numbers listed below can be dialed toll-free from anywhere within the United States. These organizations provide mental health information and referrals and, in some cases, crisis counseling.`
@@ -41,12 +41,11 @@ const hotlines = [
 
 export function getHotlines() {
     return hotlines;
-  }
-  
-  export function getHotline(hotlineId) {
+}
+
+export function getHotline(hotlineId) {
     return hotlines.find(({ id }) => id === hotlineId);
-  }
-  
- 
+}
+
 
 export default hotlines;

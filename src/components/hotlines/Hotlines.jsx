@@ -1,34 +1,26 @@
 import React from "react";
-
-import Menu from "../Menu";
-import hotlines from "./hotlines";
+import { Link, Outlet } from "react-router-dom";
+import {getHotlines} from "./hotlines";
 
 const Hotlines = () => {
+    const hotlines = getHotlines();
+
     return (
         <div>
-            <Menu />
-            {hotlines.map((hotline, id) => {
-                return (
-                    <div key={id}>
-                        <h3>{hotline.help}</h3>
-                        <p>{hotline.notes}</p>
-                        {hotline.contacts.map((contact) => {
-                            return (
-                                <div className="hotline-list" key={id}>
-                                    <span><strong>{contact.group}</strong></span>
-                                    <span>{contact.call}</span>
-                                    <span>{contact.text}</span>
-                                    <span>{contact.tty}</span>
-                                    <span>{contact.visit}</span>
-                                    <hr />
-                                </div>
-                            )
-                        })}
-                    </div>
-                );
-            })}
-        </div>
+            <h1>Hotlines</h1>
+            <ul>
+                {hotlines.map(({help, id}) => (
+                    <li key={id}>
+                        <Link to={id}>
+                            {help}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+            <hr />
 
+            <Outlet />
+        </div>
     )
 }
 

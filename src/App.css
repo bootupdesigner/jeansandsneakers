@@ -54,7 +54,7 @@ img.home-logo {
 }
 
 /* hotline-page styles */
-div.hotline-list {
+.hotline-list {
     display: flex;
     flex-direction: column;
 }
