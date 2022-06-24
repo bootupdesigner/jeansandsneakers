@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+
+import Menu from "../Menu";
 import {getHotlines} from "./hotlines";
 
 const Hotlines = () => {
@@ -7,7 +9,8 @@ const Hotlines = () => {
 
     return (
         <div>
-            <h1>Hotlines</h1>
+            <Menu />
+            <h1 className="topic-heading">Hotlines</h1>
             <ul>
                 {hotlines.map(({help, id}) => (
                     <li key={id}>

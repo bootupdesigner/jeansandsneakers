@@ -9,10 +9,16 @@ const Hotline = ({ hotlines }) => {
     return (
         <div>
 
-            <h2>{hotline.help}</h2>
-
+            <h2 className="topic-heading">{hotline.help}</h2>
             <div className="hotline-list">
                 <h3>{hotline.contacts.group}</h3>
+                {hotline.notes.map((paragraph, id) => {
+                    return(
+                        <div>
+                            <span>{paragraph}</span>
+                        </div>
+                    )
+                })}
                 <ul>
                     {hotline.contacts.map((contact, id) => {
                         return (

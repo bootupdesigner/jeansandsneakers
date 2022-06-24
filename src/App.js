@@ -21,10 +21,10 @@ import Hotline from './components/hotlines/Hotline';
 import Websites from "./components/Websites";
 import Home from "./components/Home";
 import hotlines from './components/hotlines/hotlines';
-import NotFoundPage from "./components/NotFoundPage";
+import NotFound from "./components/NotFound";
 
 function App() {
-    
+
     return (
         <div className="App">
             <Container>
@@ -46,7 +46,7 @@ function App() {
                     </Route>
 
                     <Route path="/websites" element={< Websites />} />
-                    <Route path="*" element={< NotFoundPage />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Container>
         </div>

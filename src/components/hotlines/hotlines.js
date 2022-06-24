@@ -2,6 +2,7 @@ const hotlines = [
     {
         help: "Violence and Abuse",
         id: "1",
+        notes: [],
         contacts: [
             {
                 group: "Childhelp National Child Abuse Hotline",
@@ -22,7 +23,7 @@ const hotlines = [
     },
     {
         help: "Mental Help and Substance abuse",
-        id: "s",
+        id: "2",
         notes: [
             `National Toll-Free Help Lines`,
             `The numbers listed below can be dialed toll-free from anywhere within the United States. These organizations provide mental health information and referrals and, in some cases, crisis counseling.`
