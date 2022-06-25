@@ -24,6 +24,7 @@ const Hotline = ({ hotlines }) => {
                         return (
                             <div className="hotline-list" key={id}>
                                 <span><strong>{contact.group}</strong></span>
+                                <span>{contact.about_group}</span>
                                 <span>{contact.call}</span>
                                 <span>{contact.text}</span>
                                 <span>{contact.tty}</span>
