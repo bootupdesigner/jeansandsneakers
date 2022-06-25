@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, Outlet } from 'react-router-dom';
 import { getHotline } from './hotlines';
+
 
 const Hotline = ({ hotlines }) => {
     const { hotlineId } = useParams();
@@ -35,10 +36,10 @@ const Hotline = ({ hotlines }) => {
                 </ul>
 
 
-
                 <Link to={-1}>Back to Hotlines</Link>
 
             </div>
+            <Outlet />
 
         </div>
     )

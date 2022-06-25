@@ -43,6 +43,7 @@ function App() {
 
                     <Route path="/hotlines" element={<Hotlines hotlines={hotlines} />}>
                         <Route path=':hotlineId' element={<Hotline />} />
+                        <Route path="*" element={<NotFound />} />
                     </Route>
 
                     <Route path="/websites" element={< Websites />} />
