@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useParams, Outlet } from 'react-router-dom';
 import { getHotline } from './hotlines';
 
-
 const Hotline = ({ hotlines }) => {
     const { hotlineId } = useParams();
     const hotline = getHotline(hotlineId);

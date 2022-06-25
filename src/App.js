@@ -18,9 +18,11 @@ import Safety from "./components/Safety";
 import Closing from "./components/Closing";
 import Hotlines from "./components/hotlines/Hotlines";
 import Hotline from './components/hotlines/Hotline';
-import Websites from "./components/Websites";
-import Home from "./components/Home";
 import hotlines from './components/hotlines/hotlines';
+import Websites from "./components/websites/Websites";
+import Website from './components/websites/Website';
+import websites from './components/websites/websites';
+import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -46,7 +48,11 @@ function App() {
                         <Route path="*" element={<NotFound />} />
                     </Route>
 
-                    <Route path="/websites" element={< Websites />} />
+                    <Route path="/websites" element={< Websites websites={websites} />} >
+                        <Route path=":websiteId" element={ <Website />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Route>
+
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Container>
