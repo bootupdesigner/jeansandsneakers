@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 import chapters from "./chapters";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
+import Menu from "../components/Menu";
 
 function Page() {
     const { chapterId, pageId } = useParams();
@@ -19,6 +20,7 @@ function Page() {
 
     return (
         <div>
+            <Menu />
             <div>
                 <p>
                     <Link to={'/chapters/' + chapter.id}>

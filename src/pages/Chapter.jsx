@@ -3,12 +3,15 @@ import { useParams, Link } from "react-router-dom";
 
 import PageSummary from "../components/PageSummary";
 import chapters from "./chapters";
+import Menu from "../components/Menu";
+
 
 function Chapter() {
     const { chapterId } = useParams();
     const chapter = chapters.find(chapter => chapter.id === parseInt(chapterId));
     return (
         <div>
+            <Menu />
             <div>
                 <p>
                     <Link to="/">
