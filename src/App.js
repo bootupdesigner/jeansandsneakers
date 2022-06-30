@@ -23,6 +23,11 @@ import Websites from "./components/websites/Websites";
 import Website from './components/websites/Website';
 import websites from './components/websites/websites';
 import Home from "./components/Home";
+
+import Chapter from "./pages/Chapter";
+import Chapters from "./components/Chapters";
+import Page from "./pages/Page";
+
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -49,9 +54,13 @@ function App() {
                     </Route>
 
                     <Route path="/websites" element={< Websites websites={websites} />} >
-                        <Route path=":websiteId" element={ <Website />} />
+                        <Route path=":websiteId" element={<Website />} />
                         <Route path="*" element={<NotFound />} />
                     </Route>
+
+                    <Route path="/chapters/:chapterId" element={<Chapter />} />
+                    <Route path="/chapters/:chapterId/pages/:pageId" element={<Page />} />
+                    <Route path="/chapters" element={<Chapters />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

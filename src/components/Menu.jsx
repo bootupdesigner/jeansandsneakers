@@ -24,6 +24,7 @@ const Menu = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/chapters">Chapters</Nav.Link>
                   <hr />
                   <NavDropdown
                     title="Topics"

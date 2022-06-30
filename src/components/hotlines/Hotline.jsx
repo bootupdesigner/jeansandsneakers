@@ -35,7 +35,7 @@ const Hotline = ({ hotlines }) => {
                 </ul>
 
 
-                <Link to={-1}>Back to Hotlines</Link>
+                <Link to="/hotlines">Back to Hotlines</Link>
 
             </div>
             <Outlet />
