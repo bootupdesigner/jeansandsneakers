@@ -7,15 +7,7 @@ import { Container } from "react-bootstrap";
 
 import Introduction from "./components/Introduction";
 
-import SelfWorth from "./components/SelfWorth";
-import Positude from "./components/Positude";
-import Etiquette from "./components/Etiquette";
-import Hygiene from "./components/Hygiene";
-import Nutrition from "./components/Nutrition";
-import YourBody from "./components/YourBody";
-import Dating from "./components/Dating";
-import Safety from "./components/Safety";
-import Closing from "./components/Closing";
+
 import Hotlines from "./components/hotlines/Hotlines";
 import Hotline from './components/hotlines/Hotline';
 import hotlines from './components/hotlines/hotlines';
@@ -36,17 +28,8 @@ function App() {
         <div className="App">
             <Container>
                 <Routes>
-                    <Route path="/" element={< Home />} />
-                    <Route path="/home" element={< Introduction />} />
-                    <Route path="/self-worth" element={< SelfWorth />} />
-                    <Route path="/positude" element={< Positude />} />
-                    <Route path="/etiquette" element={< Etiquette />} />
-                    <Route path="/health-and-hygiene" element={< Hygiene />} />
-                    <Route path="/physical-activity-and-nutrition" element={< Nutrition />} />
-                    <Route path="/your-body" element={< YourBody />} />
-                    <Route path="/dating-and-sex" element={< Dating />} />
-                    <Route path="/safety" element={< Safety />} />
-                    <Route path="/closing" element={< Closing />} />
+                    <Route path="/" element={<Chapters />} />
+                    <Route path="/home" element={< Home />} />
 
                     <Route path="/hotlines" element={<Hotlines hotlines={hotlines} />}>
                         <Route path=':hotlineId' element={<Hotline />} />
@@ -60,7 +43,6 @@ function App() {
 
                     <Route path="/chapters/:chapterId" element={<Chapter />} />
                     <Route path="/chapters/:chapterId/pages/:pageId" element={<Page />} />
-                    <Route path="/chapters" element={<Chapters />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

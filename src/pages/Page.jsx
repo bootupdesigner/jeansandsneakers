@@ -30,6 +30,11 @@ function Page() {
                 <h1>{page.title}</h1>
             </div>
             <div>
+                {page.summary.map((paragraph, key) => (
+                <p key={key}>{paragraph}</p>
+                ))}
+                <p className="text-center"><strong>{page.intro_quote}</strong></p>
+                <p className="text-center"><strong>{page.signed}</strong></p>
                 <p>
                     {page.story}
                 </p>
