@@ -5,16 +5,12 @@ import { Routes, Route } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 
-import Introduction from "./components/Introduction";
-
-
 import Hotlines from "./components/hotlines/Hotlines";
 import Hotline from './components/hotlines/Hotline';
 import hotlines from './components/hotlines/hotlines';
 import Websites from "./components/websites/Websites";
 import Website from './components/websites/Website';
 import websites from './components/websites/websites';
-import Home from "./components/Home";
 
 import Chapter from "./pages/Chapter";
 import Chapters from "./components/Chapters";
@@ -29,7 +25,6 @@ function App() {
             <Container>
                 <Routes>
                     <Route path="/" element={<Chapters />} />
-                    <Route path="/home" element={< Home />} />
 
                     <Route path="/hotlines" element={<Hotlines hotlines={hotlines} />}>
                         <Route path=':hotlineId' element={<Hotline />} />
