@@ -58,3 +58,24 @@ img.home-logo {
     display: flex;
     flex-direction: column;
 }
+
+.chapter-card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+}
+
+.card-image {
+    border-right: 1px solid black;
+    width: 75%;
+}
+
+.card-text {
+    padding: 10px;
+
+    width: 100%;
+}
