@@ -1,8 +1,9 @@
 import { createContext, useState } from "react";
 import { App, Credentials } from "realm-web";
-import { APP_ID } from "../realm/constants";
+// import { APP_ID } from "../../.env";
 
 // Creating a Realm App Instance
+const APP_ID = process.env.APP_ID;
 const app = new App(APP_ID);
 
 // Creating a user context to manage and access all the user related functions
