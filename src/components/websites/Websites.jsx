@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-import Menu from "../Menu";
 import { getWebsites } from "./websites";
 
 const Websites = () => {
@@ -9,7 +8,6 @@ const Websites = () => {
 
     return (
         <div>
-            <Menu />
             <h1 className="topic-heading">Websites</h1>
             <ul>
                 {websites.map(({support, id}) => (

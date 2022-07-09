@@ -59,6 +59,7 @@ img.home-logo {
     flex-direction: column;
 }
 
+/* chapter page styling */
 .chapter-card {
     display: flex;
     flex-direction: row;
