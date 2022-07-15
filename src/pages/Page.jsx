@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 
 import chapters from "./chapters";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
-import Menu from "../components/Menu";
 
 function Page() {
     const { chapterId, pageId } = useParams();
@@ -20,7 +19,6 @@ function Page() {
 
     return (
         <div>
-            <Menu />
             <div>
                 <p>
                     <Link to={'/chapters/' + chapter.id}>
@@ -31,13 +29,58 @@ function Page() {
             </div>
             <div>
                 {page.summary.map((paragraph, key) => (
-                <p key={key}>{paragraph}</p>
+                    <p key={key}>{paragraph}</p>
                 ))}
                 <p className="text-center"><strong>{page.intro_quote}</strong></p>
                 <p className="text-center"><strong>{page.signed}</strong></p>
-                <p>
-                    {page.story}
-                </p>
+
+                {page.story.map((paragraph, key) => (
+                    <p>
+                        <p key={key}>{paragraph}</p>
+                    </p>
+                ))}
+
+                {page.topic.map((topic) => (
+                    <div>
+                        <u><h3>{topic.heading}</h3></u>
+                        <p><strong>{topic.sub_heading_1}</strong></p>
+                        {topic.narrative_1.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}
+
+                        <p><strong>{topic.sub_heading_2}</strong></p>
+                        {topic.narrative_2.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}      
+
+                        <p><strong>{topic.sub_heading_3}</strong></p>
+                        {topic.narrative_3.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}      
+
+                        <p><strong>{topic.sub_heading_4}</strong></p>
+                        {topic.narrative_4.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}      
+
+                        <p><strong>{topic.sub_heading_5}</strong></p>
+                        {topic.narrative_5.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}      
+                                          
+                        <p><strong>{topic.sub_heading_6}</strong></p>
+                        {topic.narrative_6.map((paragraph, key) =>
+                        (
+                            <p>{paragraph}</p>
+                        ))}                    
+                        </div>
+
+                ))}
                 <CompleteAndContinueButton chapterId={chapterId} pageId={nextPageId()} />
             </div>
         </div>
