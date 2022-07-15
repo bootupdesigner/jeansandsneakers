@@ -23,7 +23,25 @@ const chapters = [
                 intro_quote: "Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character for it will become your destiny.",
 
                 signed: "—Unknown",
-                story: [""]
+                story: [""],
+                topic: [
+                    {
+                        heading: "",
+                        sub_heading_1: "",
+                        narrative_1: [""],
+                        sub_heading_2: "",
+                        narrative_2: [""],
+                        sub_heading_3: "",
+                        narrative_3: [""],
+                        sub_heading_4: "",
+                        narrative_4: [""],
+                        sub_heading_5: "",
+                        narrative_5: [""],
+                        sub_heading_6: "",
+                        narrative_6: [""]
+
+                    }
+                ]
             }
         ]
     },

@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 import chapters from "./chapters";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
@@ -53,35 +54,38 @@ function Page() {
                         {topic.narrative_2.map((paragraph, key) =>
                         (
                             <p>{paragraph}</p>
-                        ))}      
+                        ))}
 
                         <p><strong>{topic.sub_heading_3}</strong></p>
                         {topic.narrative_3.map((paragraph, key) =>
                         (
                             <p>{paragraph}</p>
-                        ))}      
+                        ))}
 
                         <p><strong>{topic.sub_heading_4}</strong></p>
                         {topic.narrative_4.map((paragraph, key) =>
                         (
                             <p>{paragraph}</p>
-                        ))}      
+                        ))}
 
                         <p><strong>{topic.sub_heading_5}</strong></p>
                         {topic.narrative_5.map((paragraph, key) =>
                         (
                             <p>{paragraph}</p>
-                        ))}      
-                                          
+                        ))}
+
                         <p><strong>{topic.sub_heading_6}</strong></p>
                         {topic.narrative_6.map((paragraph, key) =>
                         (
                             <p>{paragraph}</p>
-                        ))}                    
-                        </div>
+                        ))}
+                    </div>
 
                 ))}
                 <CompleteAndContinueButton chapterId={chapterId} pageId={nextPageId()} />
+                <Link to={-1}>
+                    <Button className="w-100 my-1" size="md" variant="primary">Last Page</Button>
+                </Link>
             </div>
         </div>
     )
