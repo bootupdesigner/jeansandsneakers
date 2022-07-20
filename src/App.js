@@ -3,8 +3,6 @@ import './App.css';
 
 import { Routes, Route } from "react-router-dom";
 
-import { Container } from "react-bootstrap";
-
 import Menu from "./components/Menu";
 import Hotlines from "./components/hotlines/Hotlines";
 import Hotline from './components/hotlines/Hotline';
@@ -29,7 +27,6 @@ function App() {
 
     return (
         <div className="App">
-            <Container>
                 <UserProvider>
                     <Menu />
                     <Routes>
@@ -55,7 +52,6 @@ function App() {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </UserProvider>
-            </Container>
         </div>
     );
 }

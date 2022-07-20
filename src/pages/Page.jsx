@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import chapters from "./chapters";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 
+
 function Page() {
     const { chapterId, pageId } = useParams();
 
@@ -28,13 +29,15 @@ function Page() {
                 </p>
                 <h1>{page.title}</h1>
             </div>
-            <div>
-                {page.summary.map((paragraph, key) => (
-                    <p key={key}>{paragraph}</p>
-                ))}
-                <p className="text-center"><strong>{page.intro_quote}</strong></p>
-                <p className="text-center"><strong>{page.signed}</strong></p>
 
+            {/* Introduction Chapter */}
+            <div className="intro_image">
+                <img src={page.intro_image} alt={page.intro_alt} />
+            </div>
+
+            {/* self-worth chapter */}
+
+            <div>
                 {page.story.map((paragraph, key) => (
                     <p>
                         <p key={key}>{paragraph}</p>

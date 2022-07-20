@@ -80,3 +80,14 @@ img.home-logo {
 
     width: 100%;
 }
+
+.intro_image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.intro_image img {
+    size: 100%;
+}

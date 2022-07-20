@@ -1,3 +1,4 @@
+import sneakersIntro from "../images/sneakersIntro.png";
 const chapters = [
     {
         id: 1,
@@ -8,21 +9,8 @@ const chapters = [
                 id: 1,
                 title: "Introduction",
                 description: "Did you know that the introduction of a book is used to set the tone of the book? It’s sort of a way for the writer (me) to tell the reader (you) the book’s purpose (goal).",
-                summary: [
-                    `Did you know that the introduction of a book is used to set the tone of the book? It’s sort of a way for the writer (me) to tell the reader (you) the book’s purpose (goal). When I began writing from sneakers & jeans...the purpose was very clear. To give teen girls...JUST LIKE YOU...the tools and information that’s helped me become happy, healthy, independent, and strong.`,
-
-                    `I’m writing this book to tell you that everyone has amazing, great, good, OK, not so good, pretty bad, and very sad things happen. But having a solid sense of who you are, and loving yourself despite your faults and failures, will give you the strength to move forward when the not so good, the pretty bad and the very sad things happen. Throughout my entire life, there have been people (more than I can count, with some family included) who thought I was...AND STILL AM...weird and awkward. And you know what, THAT’S OK. That’s OK, because I’m SPLENDID. And splendid people are innovators; while ordinary people are followers. I believe in being true to who I am. And for me, that means doing what feels natural; standing on the side of what is right; and treating others the way I want to be treated. I don’t think I have ever made a decision, of any kind, because it was “popular” or “hot.” I KNOW ME. I AM HAPPY WITH ME. And I DON’T COMPROMISE MY CHARACTER FOR ANY REASON or ANYONE.
-                    `,
-
-                    `I am fortunate to have a mother that worked very hard to teach me the importance of being a woman amongst women. Which for me is: A woman who can think for herself. A woman who can learn from her mistakes. A woman who can believe in herself, when no one else does. A woman who is strong in spirit, when her body is weak. A woman who knows, that where you are today, doesn’t mean that’s where you’ll be tomorrow. 
-                    `,
-
-                    `My hope is that from sneakers & jeans...will give you what you need to become a woman amongst women. So to start you off in the right direction,  I offer to you this very powerful quote:
-                    `
-                ],
-                intro_quote: "Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character for it will become your destiny.",
-
-                signed: "—Unknown",
+                intro_image: sneakersIntro,
+                intro_alt: "sneakers and jeans styled paragraph text",
                 story: [""],
                 topic: [
                     {
@@ -54,9 +42,8 @@ const chapters = [
                 id: 1,
                 title: "Self-Worth",
                 description: "The moment you allow your history to hold your mind hostage, you rob your future of its breath.",
-                summary: [],
-                intro_quote: "",
-                signed: "",
+                intro_image:"",
+                intro_alt: "",
                 story: [
                     `The moment you allow your history to hold your mind hostage, you rob your future of its breath.`,
 
@@ -89,9 +76,8 @@ const chapters = [
                 id: 2,
                 title: "Self-Worth Continued...",
                 description: "Avoiding fragile Self-worth",
-                summary: [],
-                intro_quote: "",
-                signed: "",
+                intro_image:"",
+                intro_alt: "",
                 story: [""],
                 topic: [
                     {
@@ -116,9 +102,8 @@ const chapters = [
                 id: 3,
                 title: "Self-Worth Continued...",
                 description: "Steps to Improvement",
-                summary: [],
-                intro_quote: "",
-                signed: "",
+                intro_image:"",
+                intro_alt: "",
                 story: [""],
                 topic: [
                     {
@@ -138,6 +123,7 @@ const chapters = [
                         sub_heading_6: "Influences on your self-worth",
                         narrative_6: [
                             `In a today’s world, it is easy to base your self-worth on your clothes or how much money you have. This can lead to unrealistic expectations of yourself, or high debt, just to “look” happy. When the world judges you based on your possessions, your self-worth will get you through. Having a strong self-worth is based on who you are, not on what you do for a living or what you have.`,
+
                             `Don’t allow your self-worth and decisions to be based on the opinions of others. There will always be people who don’t understand and won’t believe in you. These are the times for you to be strong in who you are and believe in yourself. Listen, to a lot of people, I am awkward and weird. But I don’t think I have ever made a decision, of any kind, because someone said I should or because it was “popular.” Why, because I, and I alone, have to live with the consequences of my actions/decisions. And so will you.`
                         ]
                     }
@@ -155,9 +141,8 @@ const chapters = [
                 id: 1,
                 title: "Positude",
                 description: "Your attitude can take you everywhere or nowhere, you decide.",
-                summary: [],
-                intro_quote: "",
-                signed: "",
+                intro_image:"",
+                intro_alt: "",
                 story: "Positude is a very simple concept; it means having a positive attitude. Regardless of your current state in life, you CAN change the way you think and feel. And you do that by visualizing the negative, then turning around and seeing yourself as being happy, content and joyous with the things that are going right in your life and with your family."
             },
         ]
@@ -172,9 +157,8 @@ const chapters = [
                 id: 1,
                 title: "",
                 description: "",
-                summary: [],
-                intro_quote: "",
-                signed: "",
+                intro_image:"",
+                intro_alt: "",
                 story: [""],
                 topic: [
                     {
