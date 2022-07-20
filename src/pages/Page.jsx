@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 import chapters from "./chapters";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
@@ -31,9 +31,9 @@ function Page() {
             </div>
 
             {/* Introduction Chapter */}
-            <div className="intro_image">
+            <Container className="intro_image">
                 <img src={page.intro_image} alt={page.intro_alt} />
-            </div>
+            </Container>
 
             {/* self-worth chapter */}
 
